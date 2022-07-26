@@ -3,9 +3,12 @@ import Header from "./components/Header";
 import initialEmails from "./data/emails";
 
 import "./App.css";
+import { useState } from "react";
 
 function App() {
   // Use initialEmails for state
+const[emails,initialEmails]=useState(initialEmails)
+
   console.log(initialEmails);
 
   return (
