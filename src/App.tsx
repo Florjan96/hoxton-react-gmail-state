@@ -7,7 +7,7 @@ import { useState } from "react";
 
 function App() {
   // Use initialEmails for state
-const[emails,initialEmails]=useState(initialEmails)
+const[emails,setEmails]=useState(initialEmails)
 
   console.log(initialEmails);
 
