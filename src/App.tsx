@@ -46,14 +46,18 @@ console.log(initialEmails);
         {/* Render a list of emails here */}
       <ul>
 
-        initialEmails.map
-        <li className='email unread'>
-
+      {initialEmails.map(function(email){
+return ( 
+<li className='email unread'>
 <input type='checkbox'></input>
 <input className='email star-checkbox'  type='checkbox'></input>
-<span className='email title'>Text</span>
-<span>Text Text vText</span>
+<span className='email title'>{email.sender}</span>
+<span>{email.title}</span>
       </li>
+      )
+
+      })}
+       
      
       </ul>
      
