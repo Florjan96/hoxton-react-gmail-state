@@ -9,7 +9,7 @@ function App() {
   // Use initialEmails for state
 const[emails,setEmails]=useState(initialEmails)
 
-  console.log(initialEmails);
+console.log(initialEmails);
 
   return (
     <div className="app">
@@ -42,7 +42,22 @@ const[emails,setEmails]=useState(initialEmails)
           </li>
         </ul>
       </nav>
-      <main className="emails">{/* Render a list of emails here */}</main>
+      <main className="emails">
+        {/* Render a list of emails here */}
+      <ul>
+
+        initialEmails.map
+        <li className='email unread'>
+
+<input type='checkbox'></input>
+<input className='email star-checkbox'  type='checkbox'></input>
+<span className='email title'>Text</span>
+<span>Text Text vText</span>
+      </li>
+     
+      </ul>
+     
+      </main>
     </div>
   );
 }
